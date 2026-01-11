@@ -1,7 +1,7 @@
 package inheritance_java;
 
 
-public class Horse implements Animal, LivingBeing {
+public class Horse implements Animal, LivingBeing { // class can implement multi interfaces
 	
 	@Override
 	public void sound() { //has to have access modifier

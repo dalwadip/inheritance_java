@@ -6,7 +6,6 @@ public class Doctor {
 	
 	private int id;
 	
-	
 	boolean hasMD;
 	
 	Doctor(boolean hasMD){
@@ -41,6 +40,10 @@ public class Doctor {
 		this.id = id;
 	}
 	
+	@Override
+	public String toString() {
+		return "" + this.hasMD; // converts boolean to string, promised to return string
+	}
 	
 
 }

@@ -1,5 +1,8 @@
 package inheritance_java;
 
+import java.awt.print.Printable;
+import java.io.PrintStream;
+
 //where everything runs, create objects here
 
 public class Main {
@@ -33,7 +36,17 @@ public class Main {
 		horse.sound();
 		horse.reproduce();
 		horse.warm();
-
+		
+		Doctor doc1 = new Doctor(true);
+		Doctor doc2 = new Doctor(false);
+		
+		//created array of objects
+		Doctor[] docs = {doc1, doc2}; // or new Doctor[3] if no objects initialized, created instead of {}
+		//make for loop that iterates through that list, then print out size of array/list
+		for(int i = 0; i < docs.length; i++) { // repeats if need to go through lots of arrays
+			System.out.println(docs[i]); //prints index 0 and 1
+		}
+		System.out.println(docs.length);
 	}
 
 }

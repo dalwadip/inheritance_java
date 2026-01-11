@@ -1,4 +1,5 @@
 package inheritance_java;
+
 //inheritance
 public class Surgeon extends Doctor{
 	
