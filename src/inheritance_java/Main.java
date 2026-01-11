@@ -17,6 +17,13 @@ public class Main {
 		dentist.oralCare();
 		dentist.education();
 		System.out.println(dentist.treats_gum);
+		
+		Doctor doctor = new Doctor(true);
+		doctor.setName("Trina");
+		
+		System.out.println(doctor.getName());
+		doctor.setId(9387565);
+		System.out.println(doctor.getId());
 
 	}
 
