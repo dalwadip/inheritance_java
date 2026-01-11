@@ -13,4 +13,21 @@ public class Dentist extends Doctor{
 		System.out.println("The dentist take care of oral healthcare.");
 	}
 
+	@Override
+	void education() {
+		System.out.println("The dentist went to dental school");
+	}
+
+	@Override
+	void assist() {
+		System.out.println("The surgeon has a dental assistant");
+	}
+
+	@Override
+	void tools() {
+		System.out.println("The surgeon has tools like mouth mirror");
+	}
+	
+	
+
 }

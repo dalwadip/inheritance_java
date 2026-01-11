@@ -13,4 +13,21 @@ public class Surgeon extends Doctor{
 		System.out.println("Surgeons operate on a person's body.");
 	}
 
+	@Override
+	void education() {
+		System.out.println("The surgeon went to medical school");
+	}
+
+	@Override
+	void assist() {
+		System.out.println("The surgeon has a nurse to assist them");
+	}
+
+	@Override
+	void tools() {
+		System.out.println("The surgeon has tools like scalpels");
+	}
+	
+	
+
 }
