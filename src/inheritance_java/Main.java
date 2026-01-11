@@ -1,4 +1,5 @@
 package inheritance_java;
+
 //where everything runs, create objects here
 
 public class Main {
@@ -20,10 +21,18 @@ public class Main {
 		
 		Doctor doctor = new Doctor(true);
 		doctor.setName("Trina");
+		Doctor mysurgeon = new Surgeon(true, true); //polymorphism
+		mysurgeon.assist();
 		
 		System.out.println(doctor.getName());
 		doctor.setId(9387565);
 		System.out.println(doctor.getId());
+		
+		Horse horse = new Horse();
+		horse.eat();
+		horse.sound();
+		horse.reproduce();
+		horse.warm();
 
 	}
 
